@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto ONGs</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -15,15 +16,53 @@
                 <a class="cabecalho__navegacao__link" href="./index.html">Home</a>
                 <a class="cabecalho__navegacao__link" href="./aboutme.html">Sobre o Projeto</a>
                 <a class="cabecalho__navegacao__link" href="./ONGs.html">Lista de ONGs</a>
-            </div>
-
-            <div class="cabecalho__menu">
                 <a class="cabecalho__navegacao__link" href="./cadastro.html">Casdastre-se</a>
                 <a class="cabecalho__navegacao__link" href="./entre.html">Entre</a>
             </div>
         </nav>
+
+        <h1>Cadastre sua ONG</h1>
     </header>
-    <main></main>
+
+    <main>
+        
+        <section class="apresentacao">
+            <h2 class="subtitulo__cadastro">Preencha os campos abaixo para que sua organização possa divulgar seus projetos e atrair novos voluntários.</h2>
+
+            <form class="formulario__cadastro">
+                <div>
+                    <legend>Nome da ONG:</legend>
+                    <label for="nome"></label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div>
+                    <legend>Área de atuação:</legend>
+                    <label for="area"></label>
+                    <input type="text" id="area" required>
+                </div>
+                <div>
+                    <legend>Descrição:</legend>
+                    <label for="descricao"></label>
+                    <input type="text" id="descricao" required>
+                </div>
+                <div>
+                    <legend>Cidade:</legend>
+                    <label for="cidade"></label>
+                    <input type="text" id="cidade" required>
+                </div>
+                <div>
+                    <legend>E-mail:</legend>
+                    <label for="email"></label>
+                    <input type="text" id="email" required>
+                </div>
+            </form>
+
+            <div>
+                <button class="botao">Cadastrar</button>
+            </div>
+
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>

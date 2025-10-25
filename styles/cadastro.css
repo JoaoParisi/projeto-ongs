@@ -1,0 +1,30 @@
+fieldset{
+    padding: 10px;
+    margin: 20px 200px 10px 200px;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.subtitulo__cadastro {
+    text-align: center;
+}
+
+.formulario__cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10%;
+}
+
+input {
+    padding: 7px 800px 7px 5px;
+}
+
+.botao {
+    padding: 10px 30px;
+    margin: 0px 45%;
+}
