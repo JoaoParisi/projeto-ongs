@@ -27,44 +27,54 @@
     <main>
         
         <section class="apresentacao">
-            <h2 class="subtitulo__cadastro">Preencha os campos abaixo para que sua organização possa divulgar seus projetos e atrair novos voluntários.</h2>
+            <h2 id="subtitulo__cadastro">Preencha os campos abaixo para que sua organização possa divulgar seus projetos e atrair novos voluntários.</h2>
 
-            <form class="formulario__cadastro">
+            <form id="formulario__cadastro" onsubmit="handleSubmit(event)">
                 <div>
                     <legend>Nome da ONG:</legend>
                     <label for="nome"></label>
-                    <input type="text" id="nome" required>
+                    <input type="text" id="nome" name="nome" required>
                 </div>
                 <div>
                     <legend>Área de atuação:</legend>
                     <label for="area"></label>
-                    <input type="text" id="area" required>
+                    <input type="text" id="area" name="area" required>
                 </div>
                 <div>
                     <legend>Descrição:</legend>
                     <label for="descricao"></label>
-                    <input type="text" id="descricao" required>
+                    <input type="text" id="descricao" name="descricao" required>
+                </div>
+                <div>
+                    <legend>Estado:</legend>
+                    <label for="estado"></label>
+                    <input type="text" id="estado" name="estado" required>
                 </div>
                 <div>
                     <legend>Cidade:</legend>
                     <label for="cidade"></label>
-                    <input type="text" id="cidade" required>
+                    <input type="text" id="cidade" name="cidade" required>
                 </div>
                 <div>
                     <legend>E-mail:</legend>
                     <label for="email"></label>
-                    <input type="text" id="email" required>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div>
+                    <legend>Telefone:</legend>
+                    <label for="telefone"></label>
+                    <input type="number" id="telefone" placeholder="(11) 99999-9999" name="telefone" min="18" required>
                 </div>
             </form>
 
             <div>
                 <button class="botao">Cadastrar</button>
             </div>
-
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer id="rodape">
         <p>Desenvolvido por João Parisi</p>
-    </footer></body>
+    </footer>
+</body>
 </html>

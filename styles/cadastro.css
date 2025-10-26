@@ -9,24 +9,34 @@ fieldset{
     gap: 30px;
 }
 
-.subtitulo__cadastro {
+#subtitulo__cadastro {
     text-align: center;
 }
 
-.formulario__cadastro {
+#formulario__cadastro {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-left: 10%;
 }
 
+#formulario__entre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
 input {
-    padding: 7px 800px 7px 5px;
+    padding: 7px 900px 7px 5px;
     background-color: rgb(61, 61, 61);
+    color: rgb(252, 252, 252);
 }
 
 .botao {
     padding: 10px 30px;
     margin: 0px 45%;
+    background-color: rgb(35, 173, 65);
 }
 
