@@ -22,9 +22,11 @@ fieldset{
 
 input {
     padding: 7px 800px 7px 5px;
+    background-color: rgb(61, 61, 61);
 }
 
 .botao {
     padding: 10px 30px;
     margin: 0px 45%;
 }
+
