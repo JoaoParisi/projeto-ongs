@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto ONGs</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/cadastro.css">
+    <link rel="stylesheet" href="./styles/entre.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -16,9 +16,6 @@
                 <a class="cabecalho__navegacao__link" href="./index.html">Home</a>
                 <a class="cabecalho__navegacao__link" href="./aboutme.html">Sobre o Projeto</a>
                 <a class="cabecalho__navegacao__link" href="./ONGs.html">Lista de ONGs</a>
-            </div>
-
-            <div class="cabecalho__menu">
                 <a class="cabecalho__navegacao__link" href="./cadastro.html">Casdastre-se</a>
                 <a class="cabecalho__navegacao__link" href="./entre.html">Entre</a>
             </div>
@@ -27,26 +24,26 @@
         <h1>Acesse sua conta</h1>
     </header>
     <main>
-        <section>
-            <form id="formulario__entre">
-                <div>
-                    <legend>E-mail:</legend>
-                    <label for="email"></label>
-                    <input type="text" id="email" name="email" required>
-                </div>
-                <div>
-                    <legend>Senha:</legend>
-                    <label for="senha"></label>
-                    <input type="text" id="senha" name="senha" required>
-                </div>
+        <section class="login-section">
+            <h2>Acesse sua conta</h2>
+            <form class="login-form">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+
+                <p class="cadastro-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
             </form>
         </section>
 
     </main>
     
-    <footer id="rodape">
-        <p>Desenvolvido por João Parisi</p>
-    </footer></body>
+    <footer>
+        <p>Desenvolvido por João Parisi &copy; <span><a href="https://github.com/JoaoParisi">Github</a></span></p>
+    </footer>
 
 </body>
 </html>

@@ -1,0 +1,83 @@
+
+.login-section {
+    background-color: #bcbcbc;
+    padding: 40px 0;
+    text-align: center;
+    min-height: 400px;
+}
+
+.login-section h2 {
+    color: #003366;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.login-form {
+    background-color: #f2f2f2;
+    display: inline-block;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0059b3;
+}
+
+.cadastro-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cadastro-link a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-form input {
+        font-size: 1em;
+    }
+
+    .login-form button {
+        font-size: 1em;
+    }
+}

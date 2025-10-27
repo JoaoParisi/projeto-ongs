@@ -21,60 +21,46 @@
             </div>
         </nav>
 
-        <h1>Cadastre sua ONG</h1>
     </header>
-
+    
     <main>
         
         <section class="apresentacao">
-            <h2 id="subtitulo__cadastro">Preencha os campos abaixo para que sua organização possa divulgar seus projetos e atrair novos voluntários.</h2>
+            <h2>Cadastre sua ONG</h2>
+            <p>Preencha os campos abaixo para que sua organização possa divulgar seus projetos e atrair novos voluntários.</p>
 
-            <form id="formulario__cadastro" onsubmit="handleSubmit(event)">
-                <div>
-                    <legend>Nome da ONG:</legend>
-                    <label for="nome"></label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div>
-                    <legend>Área de atuação:</legend>
-                    <label for="area"></label>
-                    <input type="text" id="area" name="area" required>
-                </div>
-                <div>
-                    <legend>Descrição:</legend>
-                    <label for="descricao"></label>
-                    <input type="text" id="descricao" name="descricao" required>
-                </div>
-                <div>
-                    <legend>Estado:</legend>
-                    <label for="estado"></label>
-                    <input type="text" id="estado" name="estado" required>
-                </div>
-                <div>
-                    <legend>Cidade:</legend>
-                    <label for="cidade"></label>
-                    <input type="text" id="cidade" name="cidade" required>
-                </div>
-                <div>
-                    <legend>E-mail:</legend>
-                    <label for="email"></label>
-                    <input type="text" id="email" name="email" required>
-                </div>
-                <div>
-                    <legend>Telefone:</legend>
-                    <label for="telefone"></label>
-                    <input type="number" id="telefone" placeholder="(11) 99999-9999" name="telefone" min="18" required>
-                </div>
+            <form class="formulario__cadastro" onsubmit="handleSubmit(event)">
+
+                <label for="nome">Nome da ONG:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="area">Área de atuação:</label>
+                <input type="text" id="area" name="area" required>
+
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="number" id="telefone" placeholder="(11) 99999-9999" name="telefone" min="18" required>
             </form>
 
             <div>
-                <button class="botao">Cadastrar</button>
+                <button class="botao">Cadastrar ONG</button>
             </div>
         </section>
     </main>
 
-    <footer id="rodape">
-        <p>Desenvolvido por João Parisi</p>
+    <footer>
+        <p>Desenvolvido por João Parisi &copy; <span><a href="https://github.com/JoaoParisi">Github</a></span></p>
     </footer>
 </body>
 </html>

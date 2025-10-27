@@ -1,0 +1,93 @@
+
+:root{
+    --cor-degrade-body: linear-gradient(to bottom, #f4f7f9, #e8eef2);
+}
+
+#corpo{
+    background-color: var(--cor-degrade-body);
+}
+
+.sobre {
+  background-color: #f7f9fb;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.sobre h2 {
+  position: relative;
+}
+
+.sobre h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 60px;
+  height: 4px;
+  background-color: #0077b6;
+  border-radius: 2px;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.sobre-texto {
+  flex: 1;
+  color: #333;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.sobre-texto h2 {
+  font-size: 2rem;
+  color: #003b63;
+  margin-bottom: 15px;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-acao {
+  display: inline-block;
+  background-color: #0068a3;
+  color: white;
+  font-weight: bold;
+  margin-top: 5%;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-acao:hover {
+  background-color: #004d78;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+      .sobre {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sobre h2 {
+        font-size: 1.6em;
+    }
+
+    .sobre p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+}

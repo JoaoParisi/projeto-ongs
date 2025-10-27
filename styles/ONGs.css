@@ -1,0 +1,70 @@
+.ongs {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.ongs h2 {
+  font-size: 2rem;
+  color: #003b63;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ongs .intro {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.lista-ongs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card-ong {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.card-ong:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card-ong h3 {
+  color: #005b8e;
+  margin-bottom: 8px;
+}
+
+.card-ong p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.card-ong .local {
+  margin-top: 10px;
+  font-style: italic;
+  color: #0077b6;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .ongs {
+        padding: 15px;
+    }
+
+    .ongs h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .ongs p, .ongs li {
+        font-size: 1em;
+    }
+}

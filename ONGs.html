@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto ONGs</title>
+    <link rel="stylesheet" href="./styles/ONGs.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -25,26 +26,29 @@
     </header>
 
     <main>
-        <section>
-            <h2>Explore ONGs que atuam em diferentes áreas e descubra formas de ajudar.</h2>
+        <section class="ongs">
+            <h2>Conheça ONGs cadastradas</h2>
+            <p class="intro">Explore ONGs que atuam em diferentes áreas e descubra formas de ajudar.</p>
 
-            <ul>
-                <li class="principal__lista">ONG Esperança Animal
+            <div class="lista-ongs">
+                <div class="card-ong">
+                    <h3>ONG Esperança Animal</h3>
                     <p>Cuida de animais resgatados e busca novos lares para eles.</p>
-                    <address>📍 São Paulo – SP</address>
-                </li>
+                    <p class="local"><span>📍</span> São Paulo – SP</p>
+                </div>
 
-                <li class="principal__lista">Instituto VerdeVida
+                <div class="card-ong">
+                    <h3>Instituto VerdeVida</h3>
                     <p>Promove ações ambientais e plantio de árvores em comunidades.</p>
-                    <address>📍 Curitiba – PR</address>
-                </li>
-            </ul>
+                    <p class="local"><span>📍</span> Curitiba – PR</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer id="rodape">
-        <p>Desenvolvido por João Parisi</p>
-    </footer></body>
+    <footer>
+        <p>Desenvolvido por João Parisi &copy; <span><a href="https://github.com/JoaoParisi">Github</a></span></p>
+    </footer>
 
 </body>
 </html>
