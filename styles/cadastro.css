@@ -1,6 +1,14 @@
-:root {
-    --cor-botao: #001e30;
-    --cor-letra-botao: #dedede;
+header {
+    position: relative;
+}
+
+.header-img {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
 }
 
 fieldset{
@@ -97,12 +105,6 @@ fieldset{
         flex-direction: column;
         align-items: center;
         gap: 10px;
-}
-
-    nav button {
-        width: 80%;
-        font-size: 1em;
-        padding: 10px;
 }
 
     header {
