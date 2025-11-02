@@ -75,19 +75,32 @@
   transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-      .sobre {
-        padding: 20px;
-        text-align: center;
-    }
+@media (max-width: 900px) {
+  .sobre-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .sobre h2 {
-        font-size: 1.6em;
-    }
+  .sobre-imagem {
+    width: 60%;
+  }
 
-    .sobre p {
-        font-size: 1em;
-        line-height: 1.6;
-    }
+  .sobre-texto {
+    width: 70%;
+  }
+
+  .sobre {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .sobre h2 {
+      font-size: 1.6em;
+  }
+
+  .sobre p {
+      font-size: 1em;
+      line-height: 1.6;
+  }
 
 }

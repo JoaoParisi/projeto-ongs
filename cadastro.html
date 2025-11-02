@@ -1,68 +1,66 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto ONGs</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/cadastro.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Projeto ONGs</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/cadastro.css">
+  <script defer src="./js/script.js"></script>
 </head>
 <body>
-    <header class="cabecalho">
 
-        <nav class="cabecalho__navegacao">
-            <div class="cabecalho__menu">
-                <a class="cabecalho__navegacao__link" href="./index.html">Home</a>
-                <a class="cabecalho__navegacao__link" href="./aboutme.html">Sobre o Projeto</a>
-                <a class="cabecalho__navegacao__link" href="./ONGs.html">Lista de ONGs</a>
-                <a class="cabecalho__navegacao__link" href="./cadastro.html">Casdastre-se</a>
-                <a class="cabecalho__navegacao__link" href="./entre.html">Entre</a>
-            </div>
-        </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link">Projeto ONGs</a>
 
-        <h1>Casdastre-se, e ajude.</h1>
-        <img src="./assets/cadastro.png" alt="Homem mexendo em um notebook" class="header-img">
-    </header>
-    
-    <main>
-        
-        <section class="apresentacao">
-            <h2>Cadastre sua ONG</h2>
-            <p>Preencha os campos abaixo para que sua organização possa divulgar seus projetos e atrair novos voluntários.</p>
+      <!-- Botão do menu hambúrguer -->
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-            <form class="formulario__cadastro" onsubmit="handleSubmit(event)">
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="./index.html">Home</a></li>
+          <li><a class="nav-link" href="./aboutme.html">Sobre</a></li>
+          <li><a class="nav-link" href="./ONGs.html">ONGs</a></li>
+          <li><a class="nav-link" href="./cadastro.html">Cadastre-se</a></li>
+          <li><a class="nav-link" href="./entre.html">Entre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-                <label for="nome">Nome da ONG:</label>
-                <input type="text" id="nome" name="nome" required>
+  <main class="cadastro-section">
+    <div class="container">
+      <section class="apresentacao">
+        <h2>Cadastre-se</h2>
+        <p>Preencha o formulário abaixo para criar sua conta e participar do Projeto ONGs.</p>
 
-                <label for="area">Área de atuação:</label>
-                <input type="text" id="area" name="area" required>
+        <form class="formulario__cadastro" action="#" method="post">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
-                <label for="descricao">Descrição:</label>
-                <input type="text" id="descricao" name="descricao" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" required>
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
 
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" required>
+          <label for="confirmar">Confirmar senha:</label>
+          <input type="password" id="confirmar" name="confirmar" placeholder="Confirme sua senha" required>
 
-                <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email" required>
+          <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+      </section>
+    </div>
+  </main>
 
-                <label for="telefone">Telefone:</label>
-                <input type="number" id="telefone" placeholder="(11) 99999-9999" name="telefone" min="18" required>
-            </form>
+  <footer class="site-footer">
+    <p>© 2025 Projeto ONGs. Desenvolvido com propósito.</p>
+  </footer>
 
-            <div>
-                <button class="botao">Cadastrar ONG</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Desenvolvido por João Parisi &copy; <span><a href="https://github.com/JoaoParisi">Github</a></span></p>
-    </footer>
 </body>
 </html>

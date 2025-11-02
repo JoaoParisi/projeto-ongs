@@ -1,50 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto ONGs</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/entre.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre | Projeto ONGs</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script defer src="./js/script.js"></script>
 </head>
 <body>
-    <header class="cabecalho">
 
-        <nav class="cabecalho__navegacao">
-            <div class="cabecalho__menu">
-                <a class="cabecalho__navegacao__link" href="./index.html">Home</a>
-                <a class="cabecalho__navegacao__link" href="./aboutme.html">Sobre o Projeto</a>
-                <a class="cabecalho__navegacao__link" href="./ONGs.html">Lista de ONGs</a>
-                <a class="cabecalho__navegacao__link" href="./cadastro.html">Casdastre-se</a>
-                <a class="cabecalho__navegacao__link" href="./entre.html">Entre</a>
-            </div>
-        </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-link">Projeto ONGs</a>
 
-        <h1>Entre, fique a vontade.</h1>
-        <img src="./assets/entre.png" alt="Homem mexendo em um notebook e no celular" class="header-img">
-    </header>
-    <main>
-        <section class="login-section">
-            <h2>Acesse sua conta</h2>
-            <form class="login-form">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" placeholder="Digite sua senha" required>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="./index.html">Home</a></li>
+          <li><a class="nav-link" href="./aboutme.html">Sobre</a></li>
+          <li><a class="nav-link" href="./ONGs.html">ONGs</a></li>
+          <li><a class="nav-link" href="./cadastro.html">Cadastre-se</a></li>
+          <li><a class="nav-link" href="./entre.html">Entre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-                <button type="submit">Entrar</button>
+  <main class="login-section">
+    <div class="container">
+      <h2 class="h-lg" style="color: var(--color-primary-900); text-align:center;">Entrar</h2>
+      <p class="lead" style="text-align:center;">Faça login para acessar sua conta e apoiar projetos.</p>
 
-                <p class="cadastro-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-            </form>
-        </section>
+      <form class="login-form card" action="#" method="post">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
 
-    </main>
-    
-    <footer>
-        <p>Desenvolvido por João Parisi &copy; <span><a href="https://github.com/JoaoParisi">Github</a></span></p>
-    </footer>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit" class="btn btn-primary">Entrar</button>
+        <div class="cadastro-link">
+          <p>Não tem conta? <a href="./cadastro.html">Cadastre-se aqui</a>.</p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Projeto ONGs. Desenvolvido com propósito.</p>
+  </footer>
 
 </body>
 </html>

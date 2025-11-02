@@ -1,55 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Projeto ONGs</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer src="./js/script.js"></script>
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand-link">Projeto ONGs</a>
 
-        <nav class="cabecalho__navegacao">
-            <div class="cabecalho__menu">
-                <a class="cabecalho__navegacao__link" href="./index.html">Home</a>
-                <a class="cabecalho__navegacao__link" href="./aboutme.html">Sobre o Projeto</a>
-                <a class="cabecalho__navegacao__link" href="./ONGs.html">Lista de ONGs</a>
-                <a class="cabecalho__navegacao__link" href="./cadastro.html">Casdastre-se</a>
-                <a class="cabecalho__navegacao__link" href="./entre.html">Entre</a>
-            </div>
-        </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
-        <h1>Conectando pessoas que querem ajudar com ONGs que fazem a diferença.</h1>
+            <nav class="main-nav" aria-label="Navegação principal">
+            <ul class="nav-list">
+                <li><a class="nav-link" href="./index.html">Home</a></li>
+                <li><a class="nav-link" href="./aboutme.html">Sobre</a></li>
+                <li><a class="nav-link" href="./ONGs.html">ONGs</a></li>
+                <li><a class="nav-link" href="./cadastro.html">Cadastre-se</a></li>
+                <li><a class="nav-link" href="./entre.html">Entre</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <h1 class="hero-title">Conectando pessoas que querem ajudar com ONGs que fazem a diferença.</h1>
+        </div>
     </header>
 
-    <main class="conteudo__principal">
-        <section class="principal">
+    <main class="site-main container-grid">
+        <div class="lateral-direito">
+            <section class="principal card">
+                <h2 class="h-lg">Uma plataforma para facilitar o encontro entre solidariedade e impacto real</h2>
+                <p class="lead">Nosso objetivo é aproximar quem deseja contribuir com causas sociais de ONGs que precisam de apoio. Aqui, você pode descobrir projetos inspiradores, se voluntariar e ajudar a transformar o mundo um passo de cada vez.</p>
 
-            <h2>Uma plataforma para facilitar o encontro entre solidariedade e impacto real</h2>
+                <div class="card-actions">
+                    <a class="btn btn-primary" href="./ONGs.html">Encontre uma causa</a>
+                    <a class="btn btn-outline" href="./cadastro.html">Cadastre sua ONG</a>
+                </div>
+            </section>
 
-            <div class="principal__paragrafo">
-                <p>Nosso objetivo é aproximar quem deseja contribuir com causas sociais de ONGs que precisam de apoio. Aqui, você pode descobrir projetos inspiradores, se voluntariar e ajudar a transformar o mundo um passo de cada vez.</p>
-            </div>
-
-            <aside>
-                <ul class="principal__lista">
-                    <li><a class="principal__lista__texto" href="./cadastro.html">Cadastre sua ONG</a></li>
-                    <li><a class="principal__lista__texto" href="./ONGs.html">Encontre uma causa</a></li>
-                </ul>
+            <aside class="lateral">
+                <figure class="image-card">
+                    <img src="./assets/home.png" alt="voluntários">
+                </figure>
             </aside>
+        </div>
 
+        <section class="fullwidth">
+            <div class="alert alert-info">Dica: clique em "Cadastre-se" para divulgar sua ONG.</div>
+
+            <div class="cards-grid">
+                <article class="card small">
+                    <h3>Como doar</h3>
+                    <p>Informações rápidas sobre formas de apoio e voluntariado.</p>
+                    <span class="badge">Voluntariado</span>
+                </article>
+
+                <article class="card small">
+                    <h3>Projetos recentes</h3>
+                    <p>Veja iniciativas que precisam de ajuda imediata.</p>
+                    <span class="badge">Urgente</span>
+                </article>
+            </div>
         </section>
-
-        <aside class="lateral">
-            <img src="./assets/imagem_voluntarios.png" alt="imagem voluntarios">
-        </aside>
     </main>
 
-    <footer>
-        <p>Desenvolvido por João Parisi &copy; <span><a href="https://github.com/JoaoParisi">Github</a></span></p>
+    <footer class="site-footer">
+        <p>Desenvolvido por João Parisi &copy; <a href="https://github.com/JoaoParisi">Github</a></p>
     </footer>
-    <script src="./js/index.js"></script>
+
 </body>
 </html>
